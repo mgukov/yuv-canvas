@@ -126,7 +126,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 				gl.UNSIGNED_BYTE, //type
 				data // data!
 			);
-			gl.flush();
 			checkError();
 
 			return texture;
@@ -298,6 +297,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 			// Aaaaand draw stuff.
 			gl.drawArrays(gl.TRIANGLES, 0, rectangle.length / 2);
+			gl.flush();
 			checkError();
 		};
 
