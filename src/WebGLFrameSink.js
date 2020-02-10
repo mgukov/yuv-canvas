@@ -126,6 +126,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 				gl.UNSIGNED_BYTE, //type
 				data // data!
 			);
+			gl.flush();
 			checkError();
 
 			return texture;
